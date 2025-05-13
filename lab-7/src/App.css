@@ -24,6 +24,14 @@
   color: white;
 }
 
+.App-header div.profs-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  /* div.card {
+  } */
+}
 .App-link {
   color: #61dafb;
 }
