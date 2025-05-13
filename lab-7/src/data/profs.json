@@ -1,0 +1,20 @@
+[
+    {
+        "name": "John Harrison1",
+        "favColor": "kelly green",
+        "img": "./img/john.jpg",
+        "url": "https://canvas.uw.edu"
+    },
+    {
+        "name": "John Harrison2",
+        "favColor": "kelly green",
+        "img": "./img/john.jpg",
+        "url": "https://canvas.uw.edu"
+    },
+    {
+        "name": "John Harrison3",
+        "favColor": "kelly green",
+        "img": "./img/john.jpg",
+        "url": "https://canvas.uw.edu"
+    }
+]
