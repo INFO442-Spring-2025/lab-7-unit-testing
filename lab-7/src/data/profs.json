@@ -1,20 +1,26 @@
 [
     {
-        "name": "John Harrison1",
-        "favColor": "kelly green",
-        "img": "./img/john.jpg",
-        "url": "https://canvas.uw.edu"
+        "name": "Trent Hill",
+        "role": "Associate Teaching Professor",
+        "course": "INFO 200",
+        "img": "./img/tghill62.jpg",
+        "netId": "tghill62",
+        "isRequired": false
     },
     {
-        "name": "John Harrison2",
-        "favColor": "kelly green",
-        "img": "./img/john.jpg",
-        "url": "https://canvas.uw.edu"
+        "name": "Joseph Janes",
+        "role": "Associate Professor",
+        "course": "INFO 200",
+        "img": "./img/jwj.jpg",
+        "netId": "jwj",
+        "isRequired": false
     },
     {
-        "name": "John Harrison3",
-        "favColor": "kelly green",
-        "img": "./img/john.jpg",
-        "url": "https://canvas.uw.edu"
+        "name": "Cheri Allen",
+        "role": "Guest Lecturer",
+        "course": "INFO 442",
+        "img": "./img/ca27.jpg",
+        "netId": "ca27",
+        "isRequired": true
     }
 ]
