@@ -1,6 +1,8 @@
 export default function Card(props) {
 
     const data = props.data;
+    let style = props.style;
+    const changeStyle = props.changeStyle;
 
     const name = data.name;
     const role = data.role;
@@ -8,14 +10,17 @@ export default function Card(props) {
     const img = data.img;
     const netId = data.netId;
 
+
     return (
-        <div class="card">
+        <div class={"card " + style}>
             <img src={img} class="card-img-top" alt={"Headshot of" + name}/>
             <div class="card-body">
                 <h5 class="card-title">{name}</h5>
                 <p class="card-text">{role}</p>
                 <p class="card-text">{course}</p>
                 <a href={"https://ischool.uw.edu/people/faculty/profile/"+netId} class="btn btn-primary">View on iSchool</a>
+                <button onClick={changeStyle} class="btn btn-warning">Change Color!</button>
+
             </div>
         </div>
 
