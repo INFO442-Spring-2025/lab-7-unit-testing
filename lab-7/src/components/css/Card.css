@@ -1,6 +1,18 @@
 .card {
-    max-width: 200px;
+    margin: 20px;
+    max-width: 300px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
     .card-body {
         color: black;
+
+        p {
+            font-size: 20px;
+        }
     }
 }
