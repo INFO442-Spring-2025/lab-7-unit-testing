@@ -8,7 +8,7 @@ import './components/css/Form.css'
 import PROFS from '../src/data/profs.json'
 
 function App() {
-  const [style, setStyle] = useState("light")
+  const [style, setStyle] = useState("bg-light")
 
   const changeStyle = () => {
     console.log(style)
