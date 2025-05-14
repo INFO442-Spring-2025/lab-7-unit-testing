@@ -30,10 +30,11 @@ function App() {
     )
   })
   
+  // Use the data attr on the title to hold an identifier for testing https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes
   return (
     <div className="App">
       <header className="App-header">
-        <p>John's previous TA gigs!</p>
+        <p data-testid="header-title">John's previous TA gigs!</p>
         <button onClick={toggleCards}>Click to {showCards ? "hide" : "see"} classes</button>
         <div className="profs-box">
           {showCards ? profsArray : null}
