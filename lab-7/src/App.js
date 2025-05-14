@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p data-testid="header-title">John's previous TA gigs!</p>
-        <button onClick={toggleCards}>Click to {showCards ? "hide" : "see"} classes</button>
+        <button data-testid="card-toggle" onClick={toggleCards}>Click to {showCards ? "hide" : "see"} classes</button>
         <div className="profs-box">
           {showCards ? profsArray : null}
         </div>

@@ -12,7 +12,7 @@ export default function Card(props) {
 
 
     return (
-        <div className={"card " + style}>
+        <div className={"card " + style} title="Details of {course}">
             <img src={img} className="card-img-top" alt={"Headshot of" + name}/>
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
