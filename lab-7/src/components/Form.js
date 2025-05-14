@@ -4,7 +4,7 @@ export default function Form(props) {
 
     const [inputValue, setInputValue] = useState("")
     const [formSuccess, setFormSuccess] = useState(false)
-
+    const [errorMessage, setErrorMessage] = useState()
 
     const PROFS = props.data;
 
@@ -24,9 +24,9 @@ export default function Form(props) {
         event.preventDefault();
 
         if(inputValue.length <= 2) {
-            alert("This is less than 2!")
+            setErrorMessage("Error: Text field must contain at least two letters")
         }
-        else {setFormSuccess(true)}
+        else {setFormSuccess(true); setErrorMessage(null)}
     }
 
     if(formSuccess) {
@@ -38,11 +38,13 @@ export default function Form(props) {
     }
     else {
         return (
-            <form onSubmit={handleSubmit}>
+            <form role="form" onSubmit={handleSubmit}>
+                <p>What courses have you taken?</p>
                 {profsChecks}
                 <label>What was your favorite class?
                     <input type="text" id="favorite" value={inputValue} onChange={handleChange}></input>
                 </label>
+                <p style={{color: "red"}}>{errorMessage}</p>
                 <input type="submit" value="Submit"/>
             </form>
         )
