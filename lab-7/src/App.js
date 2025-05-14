@@ -8,7 +8,8 @@ import './components/css/Form.css'
 import PROFS from '../src/data/profs.json'
 
 function App() {
-  const [style, setStyle] = useState("bg-light")
+  const [style, setStyle] = useState("bg-light");
+  const [showCards, setShowCards] = useState(false);
 
   const changeStyle = () => {
     console.log(style)
@@ -16,6 +17,9 @@ function App() {
     else setStyle("bg-success");
   };
 
+  const toggleCards = () => {
+    setShowCards(!showCards)
+  }
   const profsArray = PROFS.map((profElem) => {
     return (
       <Card
@@ -30,8 +34,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>John's previous TA gigs!</p>
+        <button onClick={toggleCards}>Click to {showCards ? "hide" : "see"} classes</button>
         <div className="profs-box">
-          {profsArray}
+          {showCards ? profsArray : null}
         </div>
 
         What courses have you taken?
