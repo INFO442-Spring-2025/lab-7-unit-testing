@@ -29,8 +29,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        John's previous TA gigs!
-        <div class="profs-box">
+        <p>John's previous TA gigs!</p>
+        <div className="profs-box">
           {profsArray}
         </div>
 

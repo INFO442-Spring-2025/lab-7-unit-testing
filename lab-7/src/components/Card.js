@@ -12,14 +12,14 @@ export default function Card(props) {
 
 
     return (
-        <div class={"card " + style}>
-            <img src={img} class="card-img-top" alt={"Headshot of" + name}/>
-            <div class="card-body">
-                <h5 class="card-title">{name}</h5>
-                <p class="card-text">{role}</p>
-                <p class="card-text">{course}</p>
-                <a href={"https://ischool.uw.edu/people/faculty/profile/"+netId} class="btn btn-primary">View on iSchool</a>
-                <button onClick={changeStyle} class="btn btn-warning">Change Color!</button>
+        <div className={"card " + style}>
+            <img src={img} className="card-img-top" alt={"Headshot of" + name}/>
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{role}</p>
+                <p className="card-text">{course}</p>
+                <a href={"https://ischool.uw.edu/people/faculty/profile/"+netId} className="btn btn-primary">View on iSchool</a>
+                <button onClick={changeStyle} className="btn btn-warning">Change Color!</button>
 
             </div>
         </div>
