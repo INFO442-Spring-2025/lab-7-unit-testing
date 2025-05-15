@@ -39,7 +39,6 @@ function App() {
           {showCards ? profsArray : null}
         </div>
 
-        What courses have you taken?
         <Form data={PROFS}/>
       </header>
     </div>
